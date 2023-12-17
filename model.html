@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Current Date and Time</title>
+    <style>
+        #b
+        {
+            background-image: url("clock.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body id="b">
+   <p style="margin-top:150px;margin-left:100px;font-size: larger;">CLICK BELOW TO SEE DATE AND TIME</p> 
+    <button style="margin-left:100px;font-size: larger;width:10%;color:black;background-color:rgb(213, 235, 48);" onclick="fu()">PRESS</button>
+    <p  style="margin-left:100px;font-size: larger;color:rgb(12, 128, 229);font-style:initial;font-size:50px;" id="o"></p>
+    <script>
+        function fu()
+        {
+            document.getElementById('o').innerHTML=Date();
+        }
+    </script>
+    </body>
+</html>
